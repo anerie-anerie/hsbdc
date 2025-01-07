@@ -1,0 +1,764 @@
+city,type
+grande prairie,Urban
+st. albert,Urban
+fort mcmurray,Urban
+calgary,Urban
+edmonton,Urban
+lethbridge,Urban
+red deer,Urban
+medicine hat,Urban
+brooks,Urban
+okotoks,Urban
+high level,Rural
+peace river,Rural
+slave lake,Rural
+fort st. john,Urban
+langley,Rural
+nelson,Rural
+abbotsford,Urban
+mission,Urban
+victoria,Urban
+white rock,Urban
+coquitlam,Urban
+kamloops,Urban
+summerland,Rural
+parksville,Rural
+vernon,Urban
+carmangay,Rural
+williams lake,Rural
+arborg,Rural
+boissevain,Rural
+winnipeg,Urban
+saint pierre-jolys,Rural
+winkler,Rural
+grandview,Rural
+hartney,Rural
+banff,Rural
+saint john,Urban
+,
+buchans,Rural
+bonavista,Rural
+picture butte,Rural
+norris point,Rural
+grand falls-windsor,Rural
+old perlican,Rural
+port aux basques,Rural
+springdale,Rural
+happy valley-goose bay,Rural
+twillingate,Rural
+port saunders,Rural
+st johns,Urban
+st lawrence,Rural
+roddickton,Rural
+baddeck,Rural
+annapolis royal,Rural
+halifax,Urban
+meteghan,Rural
+barrington,Rural
+advocate harbour,Rural
+cole harbour,Urban
+greenwich,Rural
+neils harbour,Rural
+debert,Rural
+dominion,Rural
+dutch brook,Rural
+windsor,Urban
+pugwash,Rural
+wolfville,Rural
+brookfield,Rural
+kentville,Rural
+lunenburg,Rural
+cheticamp,Rural
+amherst,Urban
+new glasgow,Urban
+berwick,Rural
+truro,Urban
+sydney,Urban
+sydney mines,Rural
+sheet harbour,Rural
+middleton,Rural
+bridgewater,Rural
+greenfield,Rural
+inverness,Rural
+trenton,Rural
+beaverbank,Rural
+bible hill,Rural
+mahone bay,Rural
+new waterford,Rural
+port hawkesbury,Rural
+pictou,Rural
+shelburne,Rural
+chatham-kent,Urban
+kingston,Urban
+london,Urban
+hagersville,Rural
+sarnia,Urban
+ottawa,Urban
+pickering,Urban
+hamilton,Urban
+markham,Urban
+brampton,Urban
+mississauga,Urban
+vaughan,Urban
+ajax,Urban
+whitby,Urban
+oshawa,Urban
+burlington,Urban
+kitchener,Urban
+guelph,Urban
+waterloo,Urban
+stratford,Urban
+niagara falls,Urban
+welland,Urban
+fort erie,Urban
+leamington,Urban
+kingsville,Rural
+cornwall,Rural
+renfrew,Rural
+barrie,Urban
+orillia,Urban
+brantford,Urban
+niagara-on-the-lake,Urban
+thorold,Urban
+st catharines,Urban
+simcoe,Rural
+dunnville,Rural
+port dover,Rural
+haliburton,Rural
+cobourg,Urban
+georgina,Urban
+aurora,Urban
+richmond hill,Urban
+toronto,Urban
+snow lake,Rural
+the pas,Rural
+wawanesa,Rural
+riverview,Rural
+dieppe,Urban
+moncton,Urban
+québec,Urban
+repentigny,Urban
+baie-comeau,Urban
+saint-michel-du-squatec,Rural
+amqui,Rural
+drummondville,Urban
+dolbeau-mistassini,Urban
+côte-saint-luc,Urban
+saguenay,Urban
+rouyn-noranda,Urban
+gatineau,Urban
+saint-charles-borromée,Rural
+gaspé,Rural
+shawinigan,Urban
+sainte-agathe-des-monts,Rural
+pointe-claire,Urban
+la pêche,Rural
+saint-jean-sur-richelieu,Urban
+akwesasne,Rural
+cowansville,Urban
+laval,Urban
+lanoraie,Rural
+rawdon,Rural
+ormstown,Rural
+dollard-des-ormeaux,Urban
+selkirk,Urban
+shoal lake,Rural
+ste rose du lac,Rural
+stonewall,Rural
+canso,Rural
+dartmouth,Urban
+sackville,Urban
+sherbrooke,Urban
+springhill,Urban
+antigonish,Urban
+barss corner,Rural
+guysborough,Rural
+upper nine mile river,Rural
+bridgetown north,Rural
+middle musquodoboit,Rural
+north sydney,Urban
+argyle,Rural
+caledonia,Rural
+bentley,Rural
+bedford,Urban
+eastern passage,Urban
+overton,Rural
+pleasantville,Rural
+lower west pubnico,Rural
+liverpool,Rural
+st. peters,Rural
+new germany,Rural
+sandy point,Rural
+bridgetown,Urban
+seabright,Rural
+glace bay,Urban
+enfield,Rural
+chester,Rural
+arichat,Rural
+lockeport,Rural
+musquodoboit harbour,Rural
+port hood,Rural
+yarmouth,Urban
+wilmot,Rural
+conway,Rural
+millbrook 27,Rural
+stellarton,Urban
+dayton,Rural
+hammonds plains,Urban
+tatamagouche,Rural
+shubenacadie,Rural
+thunder bay,Urban
+casselman,Rural
+peterborough,Urban
+tamworth,Rural
+saint thomas,Urban
+madoc,Rural
+kawartha lakes,Rural
+petrolia,Urban
+lincoln,Rural
+newmarket,Urban
+goderich,Urban
+sault ste marie,Urban
+blind river,Rural
+mattawa,Rural
+milton,Urban
+new tecumseth,Urban
+mississippi mills,Rural
+amherstburg,Urban
+oakville,Urban
+londesborough,Rural
+brighton,Rural
+arnprior,Rural
+atikokan,Rural
+west nipissing,Rural
+alfred,Rural
+orangeville,Urban
+aylmer,Rural
+wardsville,Rural
+collingwood,Urban
+bancroft,Rural
+elmira,Urban
+penetanguishene,Rural
+kemptville,Rural
+waubaushene,Rural
+belleville,Urban
+parry sound,Urban
+halton hills,Urban
+norwich,Rural
+kenora,Urban
+mount forest,Rural
+whitchurch-stouffville,Rural
+stayner,Rural
+north bay,Urban
+zurich,Rural
+dutton,Rural
+bowmanville,Urban
+bradford west gwillimbury,Rural
+wingham,Rural
+paris,Urban
+amherstview,Rural
+brockville,Urban
+smiths falls,Urban
+beaverton,Rural
+walkerton,Rural
+perth road,Rural
+watford,Rural
+brant,Rural
+burks falls,Rural
+campbellford,Rural
+uxbridge,Urban
+cambridge,Urban
+temiskaming shores,Rural
+owen sound,Urban
+powassan,Rural
+wawa,Rural
+sudbury,Urban
+capreol,Rural
+pembroke,Urban
+arthur,Rural
+cobden,Rural
+fergus,Urban
+minto,Rural
+listowel,Urban
+woodstock,Urban
+clarence-rockland,Urban
+courtland,Rural
+marmora,Rural
+carleton place,Urban
+perth,Urban
+cherry valley,Rural
+gananoque,Urban
+bracebridge,Urban
+millbrook,Rural
+lefaivre,Rural
+clarence creek,Rural
+timmins,Urban
+noelville,Rural
+midland,Urban
+chapleau,Rural
+cannington,Rural
+lorigal,Rural
+morrisburg,Rural
+lancaster,Rural
+huntsville,Urban
+parkhill,Rural
+hampton,Rural
+alexandria,Urban
+lakeshore,Rural
+hanover,Urban
+acton,Rural
+clinton,Rural
+cochrane,Rural
+lindsay,Urban
+beachburg,Rural
+chatsworth,Rural
+lambton shores,Rural
+brunner,Rural
+portland,Rural
+komoka,Rural
+godfrey,Rural
+pakenham,Rural
+south woodslee,Rural
+ailsa craig,Rural
+creemore,Rural
+lucan,Rural
+quinte west,Urban
+kapuskasing,Urban
+tillsonburg,Urban
+grimsby,Urban
+delhi,Rural
+saint jacobs,Rural
+fort william first nation,Rural
+dorchester,Rural
+sunderland,Rural
+winchester,Rural
+ear falls,Rural
+erin,Rural
+edward,Rural
+chesley,Rural
+elliot lake,Urban
+port hope,Urban
+englehart,Rural
+the blue mountains,Rural
+espanola,Urban
+exeter,Rural
+kirkland lake,Urban
+harcourt,Rural
+port stanley,Rural
+tecumseh,Urban
+fort frances,Urban
+hearst,Rural
+limoges,Rural
+french river,Rural
+greater napanee,Urban
+chesterville,Rural
+townsend,Rural
+tweed,Rural
+wiarton,Rural
+lions head,Rural
+waterford,Rural
+codrington,Rural
+gravenhurst,Urban
+geraldton,Rural
+markdale,Rural
+minden,Rural
+southampton,Rural
+saint marys,Urban
+courtice,Rural
+boyle,Rural
+essex,Urban
+dresden,Rural
+vankleek hill,Rural
+elora,Urban
+maryhill,Rural
+merrickville,Rural
+hornepayne,Rural
+shanty bay,Rural
+brussels,Rural
+iroquois falls,Rural
+ohsweken,Rural
+breton,Rural
+kincardine,Urban
+king city,Urban
+caledon,Urban
+saugeen shores,Urban
+milverton,Rural
+northbrook,Rural
+innisfil,Urban
+saint isidore,Rural
+embrun,Urban
+jarvis,Rural
+bruce mines,Rural
+lombardy,Rural
+pelham,Urban
+hawkesbury,Rural
+cutler,Rural
+opasatika,Rural
+jogues,Rural
+little current,Rural
+mindemoya,Rural
+gore bay,Rural
+manitowaning,Rural
+blondeau,Rural
+athens,Rural
+norwood,Rural
+marathon,Rural
+ignace,Rural
+maxville,Rural
+meaford,Rural
+delaware,Rural
+west drayton,Rural
+mitchell,Rural
+puslinch,Rural
+lucknow,Rural
+corbeil,Rural
+new hamburg,Rural
+m'chigeeng,Rural
+thessalon,Rural
+port perry,Rural
+lanark,Rural
+terrace bay,Rural
+schreiber,Rural
+richards landing,Rural
+port colborne,Urban
+red lake,Rural
+southwold,Rural
+manitouwadge,Rural
+tavistock,Rural
+petawawa,Urban
+golden lake,Rural
+plantagenet,Rural
+little britain,Rural
+east gwillimbury,Rural
+vermilion bay,Rural
+prescott,Urban
+dryden,Urban
+lakeside,Rural
+rainy river,Rural
+lakefield,Rural
+moonbeam,Rural
+muskrat dam,Rural
+durham,Rural
+jasper,Rural
+matheson,Rural
+palmerston,Rural
+russell,Rural
+ripley,Rural
+elmvale,Rural
+sauble beach,Rural
+strathroy,Urban
+seeleys bay,Rural
+sharbot lake,Rural
+maberly,Rural
+smithville,Rural
+whitney,Rural
+sundridge,Rural
+st. thomas,Urban
+stirling,Rural
+long sault,Rural
+temagami,Rural
+fordwich,Rural
+napanee,Urban
+wasaga beach,Urban
+holland landing,Rural
+cargill,Rural
+green valley,Rural
+barrys bay,Rural
+st-albert,Rural
+curran,Rural
+warkworth,Rural
+moose factory,Rural
+moosonee,Rural
+west elgin,Rural
+pawitik,Rural
+wikwemikong,Rural
+sioux lookout,Rural
+etobicoke,Urban
+ponoka,Rural
+hamilton (dundas),Urban
+victoriaville,Urban
+alert bay,Rural
+port moody,Urban
+port coquitlam,Urban
+montréal,Urban
+vanier,Urban
+regina,Urban
+assiniboia,Rural
+north battleford,Urban
+beauval,Rural
+beechy,Rural
+middle lake,Rural
+big river,Rural
+biggar,Rural
+birch hills,Rural
+blaine lake,Rural
+borden,Rural
+climax,Rural
+carnduff,Rural
+broadview,Rural
+buffalo narrows,Rural
+cabri,Rural
+candle lake,Rural
+carlyle,Rural
+carrot river,Rural
+central butte,Rural
+lanigan,Rural
+craik,Rural
+moose jaw,Urban
+cudworth,Cumberland House
+cupar,Rural
+cut knife,Rural
+swift current,Urban
+dalmeny,Rural
+delisle,Rural
+dinsmore,Rural
+fort qu'appelle,Rural
+elrose,Rural
+estevan,Urban
+eston,Rural
+ponteix,Rural
+oxbow,Rural
+wynyard,Rural
+duck lake,Rural
+rockglen,Rural
+grenfell,Rural
+gull lake,Rural
+hafford,Rural
+prince albert,Urban
+hodgeville,Rural
+debden,Rural
+saskatoon,Urban
+invermay,Rural
+kinistino,Rural
+kamsack,Rural
+kelvington,Rural
+kerrobert,Rural
+kipling,Rural
+kyle,Rural
+la loche,Rural
+saltcoats,Rural
+wakaw,Rural
+lampman,Rural
+langham,Rural
+strasbourg,Rural
+leader,Rural
+leoville,Rural
+leroy,Rural
+imperial,Rural
+watrous,Rural
+maryfield,Rural
+melfort,Urban
+rosthern,Rural
+stoughton,Rural
+nokomis,Rural
+norquay,Rural
+wadena,Rural
+preeceville,Rural
+quill lake,Rural
+radville,Rural
+redvers,Rural
+rosetown,Rural
+shellbrook,Rural
+maple creek,Rural
+spalding,Rural
+spiritwood,Rural
+macklin,Rural
+humboldt,Urban
+melville,Urban
+unity,Rural
+vanguard,Rural
+weyburn,Urban
+leask,Rural
+canwood,Rural
+wilkie,Rural
+willow bunch,Rural
+yorkton,Urban
+whitehorse,Urban
+dawson city,Rural
+watson lake,Rural
+la tuque,Urban
+mont-laurier,Rural
+saint-antonin,Rural
+matane,Urban
+alma,Rural
+lévis,Urban
+havre-saint-pierre,Rural
+chibougamau,Rural
+lebel-sur-quévillon,Rural
+matagami,Rural
+maniwaki,Rural
+granby,Urban
+terrebonne,Urban
+trois-pistoles,Rural
+l'assomption,Urban
+les îles-de-la-madeleine,Rural
+maria,Rural
+lachute,Urban
+saint-antoine-sur-richelieu,Rural
+beaconsfield,Urban
+chambly,Urban
+sorel-tracy,Urban
+ham-nord,Rural
+saint-georges,Urban
+trois-rivières,Urban
+charlottetown,Urban
+saint-pacôme,Rural
+saint-pascal,Rural
+saint-louis-du-ha! ha!,Rural
+warwick,Rural
+summerside,Urban
+east angus,Rural
+weedon,Rural
+fortierville,Rural
+saint-pierre-les-becquets,Rural
+baie-saint-paul,Urban
+rosemère,Urban
+rivière-du-loup,Urban
+la prairie,Urban
+châteauguay,Urban
+saint-rémi,Rural
+les bergeronnes,Rural
+saint-apollinaire,Rural
+saint-hyacinthe,Urban
+ville-marie,Urban
+saint-gervais,Rural
+saint-raphaël,Rural
+princeville,Rural
+lyster,Rural
+chandler,Rural
+brossard,Urban
+longueuil,Urban
+fermont,Rural
+mansfield-et-pontefract,Rural
+val-d'or,Urban
+amos,Rural
+mount herbert,Rural
+thetford mines,Urban
+east broughton,Rural
+chapais,Rural
+disraeli,Rural
+saint-félicien,Rural
+saint-jérôme,Urban
+saint-fabien-de-panet,Rural
+farnham,Urban
+sutton,Rural
+saint-eustache,Urban
+saint-gabriel-de-brandon,Rural
+new carlisle,Rural
+dorval,Urban
+saint-michel-des-saints,Rural
+saint-donat,Rural
+alberton,Rural
+gracefield,Rural
+cap-chat,Rural
+chisasibi,Rural
+mont-tremblant,Urban
+notre-dame-du-nord,Rural
+rimouski,Urban
+varennes,Urban
+crapaud,Rural
+rivière-rouge,Rural
+boucherville,Urban
+hunter river,Rural
+lac-étchemin,Rural
+mascouche,Urban
+montague,Rural
+les escoumins,Rural
+morell,Rural
+forestville,Rural
+souris,Rural
+magog,Urban
+lac-mégantic,Urban
+notre-dame-des-anges,Rural
+sainte-thérèse,Urban
+huntingdon,Rural
+asbestos,Rural
+marieville,Urban
+coaticook,Rural
+salaberry-de-valleyfield,Urban
+acton vale,Rural
+rigaud,Rural
+senneterre,Rural
+nicolet,Rural
+clyde river,Rural
+o'leary,Rural
+kensington,Rural
+wellington,Rural
+miscouche,Rural
+eldon,Rural
+margate,Rural
+tignish,Rural
+north rustico,Rural
+saint-raymond,Rural
+saint-constant,Rural
+berthierville,Rural
+westmount,Urban
+beaupré,Rural
+deux-montagnes,Rural
+saint-cyprien,Rural
+cleveland,Rural
+saint-augustin-de-desmaures,Urban
+l'islet,Rural
+sainte-péprétue,Rural
+beloeil,Urban
+potton,Rural
+saint-lambert,Urban
+malartic,Rural
+pont-rouge,Rural
+louiseville,Rural
+sainte-catherine,Urban
+témiscaming,Rural
+puvirnituq,Rural
+plessisville,Rural
+shawville,Rural
+blainville,Urban
+sept-îles,Urban
+saint-sauveur,Urban
+sainte-adèle,Rural
+coteau-du-lac,Rural
+sainte-élisabeth,Rural
+joliette,Urban
+saint-césaire,Rural
+la malbaie,Rural
+vaudreuil-dorion,Urban
+sainte-anne-des-monts,Rural
+roberval,Urban
+sainte-anne-de-bellevue,Urban
+kahnawake,Urban
+charlemagne,Rural
+montmagny,Rural
+mashteuiatsh,Rural
+la sarre,Rural
+l'île-perrot,Urban
+beauharnois,Urban
+pohénégamook,Rural
+saint-michel-de-bellechasse,Rural
+saint-flavien,Rural
+sainte-croix,Rural
+lac-au-saumon,Rural
+wendake,Urban
+mont-royal,Urban
+labelle,Rural
+donnacona,Rural
+saint-marc-des-carrières,Rural
+saint-casimir,Rural
+saint-liguori,Rural
+saint-lin--laurentides,Rural
+saint-jacques,Rural
+saint-pierre-de-l'île-d'orléans,Rural
+saint-bruno-de-montarville,Urban
+saint-isidore,Rural
+sainte-hénédine,Rural
+richmond,Urban
+clermont,Rural
+mirabel,Urban
+paspébiac,Rural
+mont-joli,Urban
+boisbriand,Urban
+la pocatière,Rural
+grande-vallée,Rural
+murdochville,Rural
+témiscouata-sur-le-lac,Rural
+rivière-ouelle,Rural
+port-cartier,Urban
+blanc-sablon,Rural
