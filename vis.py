@@ -1,70 +1,99 @@
+import numpy as np
 import pandas as pd
-import folium
+import matplotlib.pyplot as plt
+from numpy.polynomial.polynomial import Polynomial
+from sklearn.metrics import r2_score
 
-# Step 1: Load the dataset
-df = pd.read_csv('categories_with_city_and_type.csv')  # Ensure this file includes 'latitude', 'longitude', 'facility_category', 'type'
+# Define the years (X values) and extend it to include 2026 for prediction
+years = np.array([2018, 2019, 2020, 2021, 2022, 2023]).reshape(-1, 1)
+extended_years = np.array([2018, 2019, 2020, 2021, 2022, 2023, 2026]).reshape(-1, 1)
 
-# Step 2: Remove rows where 'type' is NaN or missing
-df = df.dropna(subset=['type'])
-
-# Step 3: Convert 'type' column to lowercase to ensure case-insensitive matching
-df['type'] = df['type'].str.lower()
-
-# Step 4: Define the color mapping for facility categories
-category_colors = {
-    'long-term & chronic care': 'blue',
-    'mental health & rehabilitation': 'green',
-    'acute care & hospitals': 'red',
-    'community & primary care': 'purple',  # Updated to purple for community & primary care
-    'specialized care & support services': 'yellow',  # Updated to yellow for specialized care & support services
-    'unknown': 'gray'  # Handle unknown types
+# Data for "Life Satisfaction" for different quintiles
+life_satisfaction_data = {
+    "First Quintile": [86.3, 86.8, 86.9, 86, 79.8, 78.4],
+    "Second Quintile": [91.8, 91.7, 91.7, 90.6, 85.9, 83.7],
+    "Third Quintile": [94.1, 94.5, 94, 93.5, 88.1, 85.5],
+    "Fourth Quintile": [95.7, 95.6, 95.5, 94.5, 90, 87.7],
+    "Fifth Quintile": [97, 96.4, 96.4, 95.1, 90.4, 89.6]
 }
 
-# Step 5: Initialize the map (centered on a general location in Canada)
-m = folium.Map(location=[56.1304, -106.3468], zoom_start=5)
+# Convert data into DataFrame
+df_life_satisfaction = pd.DataFrame(life_satisfaction_data, index=years.flatten())
 
-# Step 6: Add markers for each facility
-for idx, row in df.iterrows():
-    lat = row['latitude']
-    lon = row['longitude']
-    category = row['facility_category'].lower()  # Ensure category is also lower case
-    city_type = row['type']
+# Define colors for each quintile
+colors = {
+    "First Quintile": 'b',   # Blue
+    "Second Quintile": 'g',  # Green
+    "Third Quintile": 'r',   # Red
+    "Fourth Quintile": 'c',  # Cyan
+    "Fifth Quintile": 'm'    # Magenta
+}
 
-    # Default color based on category
-    color = category_colors.get(category, 'gray')  # 'gray' as a fallback for unknown categories
+# Function to compute polynomial regression and plot trends
+def calculate_polynomial_with_trendline(data, degree, title, ylabel):
+    plt.figure(figsize=(12, 6))
 
-    # Set opacity to 0.3 for rural and 1 for urban
-    opacity = 0.3 if city_type == 'rural' else 1.0
+    for column in data.columns:
+        values = data[column].values
 
-    # Create a circle marker on the map
-    folium.CircleMarker(
-        location=[lat, lon],
-        radius=6,
-        color=color,
-        fill=True,
-        fill_color=color,
-        fill_opacity=opacity,
-        popup=f'{category} in {row["city"]} ({city_type})'
-    ).add_to(m)
+        # Fit a polynomial regression
+        poly_fit = Polynomial.fit(years.flatten(), values, degree)
+        poly_predictions = poly_fit(extended_years.flatten())
 
-# Step 7: Add a legend
-legend_html = """
-    <div style="position: fixed; 
-                bottom: 50px; left: 50px; width: 270px; height: 200px; 
-                background-color: white; border: 2px solid black; z-index: 9999; 
-                font-size: 14px; padding: 10px;">
-        <b>Facility Categories</b><br>
-        <i style="background-color: blue; width: 20px; height: 20px; display: inline-block;"></i> Long-Term & Chronic Care<br>
-        <i style="background-color: red; width: 20px; height: 20px; display: inline-block;"></i> Mental Health & Rehabilitation<br>
-        <i style="background-color: green; width: 20px; height: 20px; display: inline-block;"></i> Acute Care & Hospitals<br>
-        <i style="background-color: purple; width: 20px; height: 20px; display: inline-block;"></i> Community & Primary Care<br>
-        <i style="background-color: yellow; width: 20px; height: 20px; display: inline-block;"></i> Specialized Care & Support Services<br>
-    </div>
-"""
-m.get_root().html.add_child(folium.Element(legend_html))
+        # Calculate R² value
+        r2 = r2_score(values, poly_fit(years.flatten()))
 
-# Step 8: Save the map as an HTML file
-m.save('facility_map.html')
+        # Plot original data and polynomial predictions
+        plt.plot(years, values, label=f"{column} (actual)", marker='o', color=colors[column])
+        plt.plot(extended_years, poly_predictions, linestyle="--", label=f"{column} (predicted)", color=colors[column])
 
-# Step 9: Print confirmation
-print("Map saved as 'facility_map_with_updated_colors.html'")
+        # Set R² value positioning based on the quintile
+        if column in ["Second Quintile", "Fourth Quintile"]:
+            # Shift the R² value to the right
+            r2_x_position = extended_years[-1] - 1
+        else:
+            # Place R² value at the center of the trendline
+            r2_x_position = extended_years[len(extended_years) // 2]
+
+        # Add R² label at the desired position on the trendline
+        plt.text(
+            r2_x_position, 
+            poly_predictions[-1] if column in ["Second Quintile", "Fourth Quintile"] else poly_predictions[len(extended_years) // 2], 
+            f'R²: {r2:.2f}', 
+            color=colors[column],
+            fontsize=10,
+            bbox=dict(facecolor='white', edgecolor='none', alpha=0.7)  # Add a background for readability
+        )
+
+        # Adjust positioning of the predicted value for 2026
+        if column == "Fourth Quintile":
+            # Position the predicted value higher for the Fourth Quintile
+            predicted_text_y = poly_predictions[-1]  # Shift higher
+        else:
+            # Keep the predicted value at the trendline for the Second Quintile and others
+            predicted_text_y = poly_predictions[-1]  
+
+        # Add the predicted value for 2026 to the graph
+        plt.text(
+            extended_years[-1] + 0.2,  # Slight offset to the right
+            predicted_text_y,           # Adjusted Y position
+            f'{poly_predictions[-1]:.2f}%',  # Display predicted percentage
+            color=colors[column],
+            fontsize=10,
+            verticalalignment='center',
+            horizontalalignment='left'
+        )
+
+        # Print the predicted percentage for 2026 in the console
+        print(f"Predicted life satisfaction for {column} in 2026: {poly_predictions[-1]:.2f}%")
+
+    plt.title(f"Life Satisfaction Trends with Polynomial Regression: {title}")
+    plt.xlabel("Year")
+    plt.ylabel(ylabel)
+    plt.legend(title="Quintiles", bbox_to_anchor=(1.05, 1), loc="upper left")
+    plt.grid(True)
+    plt.tight_layout()
+    plt.show()
+
+# Perform polynomial regression analysis for life satisfaction data
+calculate_polynomial_with_trendline(df_life_satisfaction, degree=2, title="by Income Quintiles", ylabel="Satisfaction (%)")
